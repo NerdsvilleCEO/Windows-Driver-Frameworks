@@ -114,7 +114,7 @@ FxWmiTraceMessage(
 
     va_start(va, MessageNumber);
     
-#pragma prefast(suppress:__WARNING_BUFFER_OVERFLOW, "Recommneded by EndClean");
+#pragma prefast(suppress:__WARNING_BUFFER_OVERFLOW, "Recommended by EndClean");
     status = WmiTraceMessageVa(LoggerHandle,
                                MessageFlags,
                                MessageGuid,
@@ -395,7 +395,7 @@ Returns:
         size_t    argLen;
 
         va_start(ap, MessageNumber);
-#pragma prefast(suppress: __WARNING_BUFFER_OVERFLOW, "Recommneded by EndClean");
+#pragma prefast(suppress: __WARNING_BUFFER_OVERFLOW, "Recommended by EndClean");
         while ((va_arg(ap, PVOID)) != NULL) {
 
             argLen = va_arg(ap, size_t);
